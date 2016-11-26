@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 
 <head>
 	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
 	<title>DevMtin</title>
 </head>
 
-<body>
+<body ng-controller="myCntrl">
+	<div class="container">
+		<div class="top-nav">
+			<div class="top-col top-left"><img ng-src="./images/Icons/search.svg"></div>
+			<div class="top-col top-center devMtTitle">DevMountain</div>
+			<div class="top-col top-right"><img ng-src="./images/Icons/Ham.svg"></div>
+		</div>
+		<div class="content-container">
+			<div class="main-content-left">
+				<div class="form-content">
+					<div class="welcome-text">Welcome to <span class="blue-span">DevMountain</span> Social<br />
+					Add Some Info So Friends Can Find You
+				</div>
+				<input type="text" id="fullname" placeholder="Full Name"><br />
+				<input type="text" id="tagline" placeholder="Tagline"><br />
+				<input type="text" id="profileIMG" placeholder="Profile Image Url"><br />
+				<textarea id="bio" placeholder="Bio"></textarea><br />
+				<button>Save Changes</button>
+ 				</div>
+		
+			</div>
+			<div class="main-content-right">
+			test
+				
+			</div>
+		</div>
 
-  
+		<div ui-view>
+			
+
+		</div>
+		<div class="bottom-nav">
+
+
+			<div class="bottom-links-container">
+				<!-- Input Logic to have only current link underlined -->
+				<div class="bottom-col bottom-left">
+					<a class="bottom-nav-links" ui-sref="view-friends">View Friends</a>
+				</div>
+				<div class="bottom-col bottom-center">
+					<a class="bottom-nav-links" ui-sref="find-friends">Find Friends</a>
+				</div>
+				<div class="bottom-col bottom-right">
+					<a class="bottom-nav-links" ui-sref="update-profile">Update-Profile</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+ <script src="//unpkg.com/angular-ui-router@0.3.1/release/angular-ui-router.js"></script>
+ <script src="./js/myApp.js"></script>
+ <script src="./js/myCntrl.js"></script>
 </body>
 </html>

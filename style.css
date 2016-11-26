@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}
+
+
+
+.top-nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	vertical-align: middle;
+	line-height: 60px;
+	border-bottom: 2px solid #F6F6F6;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.top-col {
+	width: calc(100% / 3);
+	
+	float: left;
+}
+
+.top-center {
+	text-align: center;
+}
+
+.devMtTitle {
+	font-family: 'Lora', serif;
+	font-size: 16.8px;
+
+	color: #272727;
+}
+
+.top-left {
+	text-align: left;
+}
+
+.top-right {
+	text-align: right;
+}
+
+.content-container {
+	height: 100%;
+	position: relative;
+	top: 60px;
+}
+
+.main-content-left, .main-content-right {
+	width: calc(100% / 2);
+	float: left;
+}
+
+.main-content-left {
+	text-align: center;
+
+}
+
+.main-content-right {
+	background-color: red;
+}
+
+
+.form-content {
+	padding-top: 30px;
+}
+
+.welcome-text {
+	font-family: 'Lora', serif;
+	font-size: 12.07px;
+	line-height: 14px;
+	color: #232323;
+
+	margin: 15px auto;
+}
+
+.blue-span {
+	color: #74FDF2;
+}
+
+.form-content > input, textarea {
+	font-family: 'Lora', serif;
+	font-size: 15.96px;
+	line-height: 19px;
+	color: #B6B6B6;
+	border: 1px solid #B6B6B6;
+	width: 230px;
+	margin: 3px auto;
+	padding: 2px 8px;
+
+}
+
+#bio {
+	height: 170px;
+	vertical-align: top;
+	resize: none;
+
+}
+
+.form-content > button {
+	font-family: 'Lora', serif;
+	font-size: 13.44px;
+	line-height: 17px;
+	color: #9A9A9A;
+	width: 225px;
+	background-color: #74FDF2;
+	border: 1px solid #B6B6B6;
+	margin: 4px auto;
+	padding: 4px;
+}
+
+.bottom-nav {
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+
+}
+
+.bottom-col {
+	width: calc(100% / 3);
+	height: 39.6px;
+	float: left;
+
+}
+
+.bottom-nav-links {
+	font-family: 'OpenSans';
+	font-weight: bold;
+	font-size: 13.2px;
+	line-height: 18px;
+	color: #A9A9A9;
+}
+
+
+
+.bottom-links-container {
+	border-top: 2px solid #A9A9A9;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 39.6px;
+}
+
+
+
